@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.nit.entity.MobileUser" table="Mobile_User_Decl">
+		<id name="regNO" column="REGNO">
+		</id>
+		<!-- cfgs versioning -->
+		<version name="updationCount" column="UPDATIONCOUNT"></version>
+		<property name="name" column="NAME"></property>
+		<property name="circle" column="CIRCLE"></property>
+		<property name="mobileNo" column="MOBILENO"></property>
+		<property name="postpaid" column="POSTPAID"></property>
+
+	</class>
+
+
+</hibernate-mapping>
